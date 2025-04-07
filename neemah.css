@@ -14,6 +14,7 @@ header {
     top: 0;
     width: 100%;
     text-align: center;
+   
     
     
 nav {
@@ -35,13 +36,16 @@ nav a {
 }
 .hero {
     background-image: url(burger.jpg);
-    background-size: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom -50px  ;
     height: 400px;
     display: block;
     align-items: center;
     justify-content: center;
     color: white;
     text-align: center;
+    
    
 }
 .menu {
