@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: pink;
+}
+header {
+    background-color: orange;
+    color: white;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    
+    
+nav {
+    margin: 20px 0;
+   
+}
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    
+    
+    
+}
+.lihold {
+        text-decoration-line: none ;
+        text-decoration-color: ;
+    }
+}
+.hero {
+    background-image: url(burger.jpg);
+    background-size: 50%;
+    height: 400px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+   
+}
+.menu {
+    padding: 20px;
+    text-align: center;
+}
+.menu-item {
+    margin: 20px 0;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.container{
+    margin: 100px 0 0 200px;
+    width: 70%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.slides{
+    width: 10%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.684);
+    transition: all ease-in-out 0.5s;
+}
+.slides:hover{
+    width: 25%;
+}
