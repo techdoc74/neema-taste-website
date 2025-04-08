@@ -5,7 +5,7 @@ body {
     background-color: pink;
 }
 header {
-    background-color: orange;
+    background-color: rgba(255, 100, 0, 150);
     color: white;
     padding: 0;
     margin: 0;
@@ -13,6 +13,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
+    height: 98px;
     text-align: center;
    
     
@@ -45,8 +46,14 @@ nav a {
     justify-content: center;
     color: white;
     text-align: center;
-    
-   
+
+
+}
+.heroo{
+    padding-bottom: 5%;
+}
+.heroos{
+    padding-bottom: 5%;
 }
 .menu {
     padding: 20px;
