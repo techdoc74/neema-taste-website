@@ -3,59 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> NEEMA tastecd..</title>
+    <title>NEEMA TASTE</title>
     <link rel="stylesheet" href="neemah.css">
 </head>
 <body>
 
 <header>
     <div>
-        
-    <h1>NEEMA TASTE</h1>
-    <nav>
-        <a class="lihold" href="index.html">Home</a>
-        <a class="lihold" href="menu.html">Menu</a>
-        <a class="lihold" href="about.html">About us</a>
-    </nav>
+        <h1>NEEMA TASTE</h1>
+        <nav>
+            <a class="lihold" href="index.html">Home</a>
+            <a class="lihold" href="menu.html">Menu</a>
+            <a class="lihold" href="about.html">About us</a>
+        </nav>
     </div>
 </header>
 
 <div class="hero">
-    <h1 class="heroos"></h1>
-   <h1> <p class="heroo">Welcome to NEEMA TASTE</p></h1>
-   <p>Satisfying your cravings </p>
+    <h2 class="heroo">Welcome to NEEMA TASTE</h2>
+    <p>Satisfying your cravings</p>
 </div>
 
-
-<div class=" container">
-    <img class="slides" src="ogbono.jpg" alt="">
-<img class="slides" src="spag.jpg" alt="">
-<img class="slides" src="yam.jpg" alt="">
-<img class="slides" src="noodls.jpg" alt="">
-<img class="slides" src="oha.jpg" alt="">
+<div class="container">
+    <img class="slides" src="ogbono.jpg" alt="Ogbono Soup">
+    <img class="slides" src="spag.jpg" alt="Spaghetti">
+    <img class="slides" src="yam.jpg" alt="Yam">
+    <img class="slides" src="noodls.jpg" alt="Noodles">
+    <img class="slides" src="oha.jpg" alt="Oha Soup">
 </div>
 
+<!-- Simple slider script -->
+<script>
+let slideIndex = 0;
+showSlides();
+function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("slides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
 
 <section class="menu" id="menu">
-    <h2>Our special Menu</h2>
+    <h2>Our Special Menu</h2>
     <div class="menu-item">
         <h3>Shawarma</h3>
-        <p>creamy, yummy and spicy made with veggies and chicken.</p>
+        <p>Creamy, yummy and spicy made with veggies and chicken.</p>
     </div>
     <div class="menu-item">
-        <h3>Native pasta</h3>
-        <p>made with roasted fish,palm oil,boild eggs and ganished with scent leafs.</p>
+        <h3>Native Pasta</h3>
+        <p>Made with roasted fish, palm oil, boiled eggs and garnished with scent leaves.</p>
     </div>
     <div class="menu-item">
-        <h3>zobo (hibiscus delight)</h3>
-        <p>made with hibiscus leafs, cloves,ginger,pineapple,negro pepper and cinnamon.</p>
+        <h3>Zobo (Hibiscus Delight)</h3>
+        <p>Made with hibiscus leaves, cloves, ginger, pineapple, negro pepper and cinnamon.</p>
     </div>
 </section>
 
 <footer>
     <p>&copy; 2025 NEEMA TASTE. All rights reserved.</p>
     <p>JIMOH GIWA CRESCENT, NO.16 OFF EDU PRY. SCHOOL AGBARA</p>
-    <p>Email: info@neemataste.com | Phone:08085363846, 09036958485</p>
+    <p>Email: info@neemataste.com | Phone: 08085363846, 09036958485</p>
 </footer>
 
 </body>

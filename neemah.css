@@ -1,92 +1,167 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: pink;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #fff8f0;
+    color: #333;
+    line-height: 1.6;
 }
+
+/* Header styles */
 header {
-    background-color: rgba(255, 100, 0, 150);
-    color: white;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 98px;
+    background: #a83232;
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+header h1 {
     text-align: center;
-   
-    
-    
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
 nav {
-    margin: 20px 0;
-   
-}
-nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-    
-    
-    
-}
-.lihold {
-        text-decoration-line: none ;
-        text-decoration-color: ;
-    }
-}
-.hero {
-    background-image: url(burger.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom -50px  ;
-    height: 400px;
-    display: block;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
-
-
-}
-.heroo{
-    padding-bottom: 5%;
-}
-.heroos{
-    padding-bottom: 5%;
-}
-.menu {
-    padding: 20px;
-    text-align: center;
-}
-.menu-item {
-    margin: 20px 0;
-}
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-.container{
-    margin: 100px 0 0 200px;
-    width: 70%;
-    height: 450px;
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 30px;
 }
-.slides{
-    width: 10%;
-    height: 100%;
+
+nav .lihold {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 18px;
+    border-radius: 20px;
+    transition: background 0.2s, color 0.2s;
+}
+
+nav .lihold:hover, nav .lihold:focus {
+    background: #fff;
+    color: #a83232;
+}
+
+/* Hero section */
+.hero {
+    background: 
+        linear-gradient(90deg, rgba(255,229,208,0.3) 60%, rgba(255,248,240,) 100%),
+        url('burger.jpg') center/cover no-repeat;
+    text-align: center;
+    padding: 60px 20px 40px 20px;
+    margin-bottom: 30px;
+    border-radius: 0 0 30px 30px;
+}
+
+.heroo {
+    font-size: 2.2rem;
+    color: #a83232;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Image slider */
+.container {
+    max-width: 600px;
+    margin: 30px auto 40px auto;
+    position: relative;
+    height: 320px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 16px rgba(168,50,50,0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.slides {
+    width: 100%;
+    height: 320px;
     object-fit: cover;
-    border-radius: 10px;
-    border: 2px solid rgba(255, 255, 255, 0.684);
-    transition: all ease-in-out 0.5s;
+    border-radius: 18px;
+    display: none;
+    transition: opacity 0.5s;
 }
-.slides:hover{
-    width: 25%;
+
+/* Menu section */
+.menu {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px 20px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 12px rgba(168,50,50,0.07);
+}
+
+.menu h2 {
+    color: #a83232;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2rem;
+}
+
+.menu-item {
+    margin-bottom: 22px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #ffe5d0;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+.menu-item h3 {
+    color: #a83232;
+    font-size: 1.2rem;
+    margin-bottom: 6px;
+}
+
+.menu-item p {
+    color: #555;
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    background: #a83232;
+    color: #fff;
+    text-align: center;
+    padding: 18px 10px;
+    margin-top: 40px;
+    font-size: 1rem;
+    border-radius: 18px 18px 0 0;
+}
+
+footer p {
+    margin: 4px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 700px) {
+    .container {
+        max-width: 95vw;
+        height: 180px;
+    }
+    .slides {
+        height: 180px;
+    }
+    .menu {
+        padding: 18px 5vw;
+    }
+    .hero {
+        padding: 35px 5vw 25px 5vw;
+    }
+    header h1 {
+        font-size: 1.5rem;
+    }
 }
